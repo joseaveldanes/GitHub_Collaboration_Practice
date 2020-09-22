@@ -1,0 +1,14 @@
+
+joseaveldanes@Joses-MBP GitHub_Collaboration_Practice % vim EmptyTextFile 
+joseaveldanes@Joses-MBP GitHub_Collaboration_Practice % git add EmptyTextFile
+joseaveldanes@Joses-MBP GitHub_Collaboration_Practice % git commit -m "commit empty text file" 
+[firstroject 657b3fd] commit empty text file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+joseaveldanes@Joses-MBP GitHub_Collaboration_Practice % git push 
+fatal: The current branch firstroject has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin firstroject
+
+joseaveldanes@Joses-MBP GitHub_Collaboration_Practice % git push --set-upstream origin firstroject
+ 
