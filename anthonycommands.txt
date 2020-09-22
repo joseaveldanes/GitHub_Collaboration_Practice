@@ -1,0 +1,100 @@
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~
+$ cd Desktop/CSS/
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS
+$ git clone https://github.com/joseaveldanes/GitHub_Collaboration_Practice.git
+Cloning into 'GitHub_Collaboration_Practice'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.28 KiB | 59.00 KiB/s, done.
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS
+$ cd GitHub_Collaboration_Practice/
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (master)
+$ ls
+EmptyTextFile  README.md
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (master)
+$ git checkout -b Anthony_Branch
+Switched to a new branch 'Anthony_Branch'
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch)
+$ vim README.md
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch)
+$ vim EmptyTextFile.txt
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Anthony_Branch
+
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch)
+$ vim EmptyTextFile.txt
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch)
+$ git checkout master
+Switched to branch 'master'
+M       README.md
+Your branch is up to date with 'origin/master'.
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (master)
+$ git pull
+Already up to date.
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (master)
+$ git checkout -b Anthony_Branch2
+Switched to a new branch 'Anthony_Branch2'
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ ls
+EmptyTextFile  EmptyTextFile.txt  README.md
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ vim EmptyTextFile.txt
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ vim EmptyTextFile
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ touch commands.txt
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ git add EmptyTextFile
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ git add *
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ mv commands.txt anthonycommands.txt
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ git add *
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ git commit -m "added program/research and command file"
+[Anthony_Branch2 f1a8289] added program/research and command file
+ 5 files changed, 3 insertions(+), 2 deletions(-)
+ create mode 100644 EmptyTextFile.txt
+ create mode 100644 anthonycommands.txt
+ create mode 100644 commands.txt
+
+Anthony Palafox@DESKTOP-ARJ0PVE MINGW64 ~/Desktop/CSS/GitHub_Collaboration_Practice (Anthony_Branch2)
+$ git push
+fatal: The current branch Anthony_Branch2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Anthony_Branch2
