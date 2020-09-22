@@ -1,0 +1,10 @@
+cd Google\ Drive/BerkeleyCourses/SOC273L/
+git clone https://github.com/joseaveldanes/GitHub_Collaboration_Practice.git
+cd GitHub_Collaboration_Practice
+# then I edited the text file using Sublime
+touch hero_code.txt
+# then I edited that text file using Sublime
+git add hero_code.txt EmptyTextFile
+git commit -m "hero's edits and commands"
+git push 
+git status
